@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous" />
+		<script src="./script.js" defer></script>
+
+		<title>file tests</title>
+	</head>
+	<body>
+		<div class="container">
+			<h2>this is a test to upload your pic</h2>
+			<form method="POST" data-form-photo enctype="multipart/form-data">
+				<div class="input-group mb-3">
+					<span class="input-group-text" id="size">Your size</span>
+					<input
+						type="text"
+						class="form-control"
+						placeholder="Size"
+						aria-label="Size"
+						aria-describedby="size" />
+				</div>
+				<div class="input-group mb-3">
+					<span class="input-group-text" id="item">Item Name</span>
+					<input
+						type="text"
+						class="form-control"
+						placeholder="Item"
+						aria-label="Item"
+						aria-describedby="item" />
+				</div>
+				<div class="input-group mb-3">
+					<input
+						type="file"
+						class="form-control"
+						id="inputGroupFile02"
+						multiple />
+					<label class="input-group-text" for="inputGroupFile02">Upload</label>
+				</div>
+
+				<div class="input-group mb-3">
+					<button class="btn btn-success">Submit</button>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
